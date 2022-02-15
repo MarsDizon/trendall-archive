@@ -10,7 +10,7 @@ const VasePreview = (props) => {
 
   useEffect(()=>{
       //Get the selected vase using the vaseRef passed through the URL
-      axios.get(`http://127.0.0.1:8000/api/getplate/?vase=${props.vaseRef}`)
+      axios.get(`https://trendall-api.herokuapp.com/api/getplate/?vase=${props.vaseRef}`)
           .then(res=>{
               setData(res.data)
           })

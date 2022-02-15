@@ -94,7 +94,7 @@ const AdvancedForm = () => {
     //Displays a list of searchable terms for each relevant field
     const TermsDictionary = () => {
         const urlPath = window.location.href;
-        const pathname = urlPath.replace("http://localhost:3000/advanced-search/?", "");
+        const pathname = urlPath.replace("https://clever-spence-0e0685.netlify.app/advanced-search/?", "");
 
         return (
         <TermsDiv>
