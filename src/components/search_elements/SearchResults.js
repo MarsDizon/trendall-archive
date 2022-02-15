@@ -8,7 +8,7 @@ const SearchResults = () => {
     const [Data, setData] = useState([])
 
     const urlPath = window.location.href;
-    const pathname = urlPath.replace("https://clever-spence-0e0685.netlify.app/search/", "");
+    const pathname = urlPath.replace("https://trendall-archive.herokuapp.com/search/", "");
 
     useEffect(() => {
         axios.get(`https://trendall-api.herokuapp.com/api/filterVase/${pathname}`)
