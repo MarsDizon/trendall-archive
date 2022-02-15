@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route path="/advanced-search" element={<AdvancedSearch />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/search" element={<FacetedSearch />}/>
-      <Route path="/viewvase/" element={<ViewVase/>} />
+      <Route path="/vase/" element={<ViewVase/>} />
     </Routes>
     <Footer />
   </Router>,

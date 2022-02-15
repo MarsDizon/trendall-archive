@@ -62,7 +62,7 @@ const SearchResults = () => {
                 {/*Vase Result Card*/}
                 <ul className="card-grid">
                     {Data.map((item) => (
-                        <a href ={`/viewVase/?vaseRef=${item.vaseRef}`} key={`${item.vaseRef}`} textDecoration="none"> {/* This needs to change */}
+                        <a href ={`/vase/?vaseRef=${item.vaseRef}`} key={`${item.vaseRef}`} textDecoration="none"> {/* This needs to change */}
                             <div className="card baseBlock mb-4 border-0">
                                 <div className="card-image">
                                     <img src= 'https://i.ibb.co/1Tjbnj6/P-1-2.png'/>
