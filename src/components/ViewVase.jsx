@@ -39,7 +39,7 @@ const Vase=()=>{
 
     useEffect(()=>{
         //Get the selected vase using the vaseRef passed through the URL
-        axios.get(`http://127.0.0.1:8000/api/getVase/?vaseRef=${vaseRef}`)
+        axios.get(`https://trendall-api.herokuapp.com/api/getVase/?vaseRef=${vaseRef}`)
             .then(res=>{
                 console.log({vaseRef})
                 console.log('Response from main API: ',res) //printing the response to the console for debugging
