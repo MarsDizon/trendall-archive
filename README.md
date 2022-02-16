@@ -1,6 +1,10 @@
 # Trendall Archive Web App
 This is a web app created for the Trendall Research Centre, to view digitized vase 
-records extracted from paper based records and imported into a database. 
+records extracted from paper based records and imported into a database. The web app 
+was created in conjunction with a text extraction team who worked towards digitising 
+of paper-based records.
+
+https://trendall-archive.herokuapp.com/
 
 ## Available Scripts
 
@@ -19,35 +23,9 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+## Libraries Used
+This project was created with:
+- React, Bootstrap, Material UI
+
 ## Authors
 Emily O'Keefe, Mars Dizon
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
