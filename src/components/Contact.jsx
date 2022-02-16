@@ -1,5 +1,6 @@
 import React from "react";
 import { SearchHeader } from ".";
+import menzies_exterior from "../assets/menzies_exterior.jpg";
 
 function Contact() {
   return (
@@ -10,17 +11,24 @@ function Contact() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              src={menzies_exterior}
               alt=""
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Contact</h1>
+            <h1 class="font-weight-normal">Contact Us</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              <b>A.D. Trendall Research Centre</b><br/>
+              Menzies College <br/>
+              La Trobe University <br/>
+              Victoria 3086 <br/>
+              AUSTRALIA 
+            </p>
+            <p> 
+              <b>T:</b> +61 3 9479 2845 <br/>
+              <b>F:</b> +61 3 9479 1827 <br/>
+              <b>E:</b> trendall@latrobe.edu.au <br/>
+              <small><i>Open by appointment only</i></small><br/>
             </p>
           </div>
         </div>

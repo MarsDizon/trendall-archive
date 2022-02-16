@@ -81,6 +81,21 @@ footer {
 
 
 
+/* ----------- About ----------- */
+
+.about {
+  padding-top: 100px;
+}
+
+
+/* ----------- Contact ----------- */
+
+.contact {
+  padding-top: 143px;
+}
+
+
+
 /* ----------- Faceted Search ----------- */
 
 .card::after,
@@ -209,3 +224,5 @@ footer {
 .vaseDiv td{
   padding-bottom: 10px;
 }
+
+

@@ -4,6 +4,8 @@ import BannerVaseImage from '../assets/basicsearchimage.png';
 import BasicSearchBar from "./search_elements/BasicSearchBar";
 import GoldBtn from "../components/buttons/GoldBtn";
 import { HomeHeader } from ".";
+import trendall_img from "../assets/trendall.jpeg"
+
 //---------------------------------------------------------------------------------------
 
 const BasicSearchBanner = styled.div`
@@ -57,43 +59,23 @@ function HomePage() {
         </SearchBarDiv>
       </BasicSearchBanner>
 
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
+      <div class="container-sm">
+        <div class="row align-items-center justify-content-center my-5">
+          <div class="col-lg-2">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              src={trendall_img}
               alt=""
             />
           </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Home page</h1>
+          <div class="col-lg-9">
+            <h2 class="font-weight-light">The Trendall Archive</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
-      </div>
-
-    <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Home page</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              The A.D. Trendall Research Centre holds more than 40,000 photographs collected by Arthur D. Trendall for his research.
+              This photographic archive is classified according to the painters identified by Trendall over his lifetime of study and
+              is a unique research resource for Ancient Mediterranean Pottery. The Archive is currently in the process of being
+              digitised and stored in a database accessible online by the general public. This online database currently contains vases
+              from 'Red-Figured Vases of Paestum' by Arthur D. Trendall.
             </p>
           </div>
         </div>
