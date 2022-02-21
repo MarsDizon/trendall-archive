@@ -23,6 +23,13 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+## API 
+
+The API of the Trendall Archive is hosted seperately from the client-side. You can find the repository 
+for the API here. 
+
+https://github.com/MarsDizon/trendall-api
+
 ## Libraries Used
 This project was created with:
 - React, Bootstrap, Material UI
