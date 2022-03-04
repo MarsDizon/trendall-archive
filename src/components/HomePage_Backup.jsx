@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Tooltip from '@material-ui/core/Tooltip';
 import BannerVaseImage from '../assets/basicsearchimage.png';
 import BasicSearchBar from "./search_elements/BasicSearchBar";
-import GoldBtn from "../components/buttons/GoldBtn";
+import GoldBtn from "./buttons/GoldBtn";
 import { HomeHeader } from ".";
 
 
@@ -11,7 +11,7 @@ import { HomeHeader } from ".";
 
 const BasicSearchBanner = styled.div`
   width: 100%;
-  max-height: 450px;
+  height: 450px;
   padding: 45px 60px 45px 60px;
   box-sizing: border-box;
   background-color: #D4422F;
@@ -63,15 +63,15 @@ function HomePage() {
       </BasicSearchBanner>
       <div className='search-by-category'>
         {/*Display Search Results Title with number of vases found*/}
-        <div style={{ display:'flex', fontFamily:"Roboto", fontSize:"22px", padding: '10px 0px 30px 0px'}}>
-          Search By Category [Unimplemented]
+        <div style={{ display:'flex', fontFamily:"Roboto", fontSize:"19px", padding: '10px 0px 30px 0px'}}>
+          Search By Category (Unimplemented)
         </div>
 
         {/*Vase Result Card*/}
         <ul className="card-grid">
           <div className="card baseBlock mb-4 border-0">
               <div className="card-image">
-                  <img src= 'https://i.ibb.co/30fSHMs/streamline-icon-history-urn-140x140-1.png'/>
+                  <img src= 'https://i.ibb.co/VSQ311K/streamline-icon-history-urn-140x140.png'/>
               </div>
 
               <div className="card-content">
@@ -83,7 +83,7 @@ function HomePage() {
 
           <div className="card baseBlock mb-4 border-0">
               <div className="card-image">
-                  <img src= 'https://i.ibb.co/r5HLbcX/streamline-icon-archive-books-140x140-1.png'/>
+                  <img src= 'https://i.ibb.co/N9jL0RQ/streamline-icon-archive-books-140x140.png'/>
               </div>
 
               <div className="card-content">
@@ -95,7 +95,7 @@ function HomePage() {
 
           <div className="card baseBlock mb-4 border-0">
               <div className="card-image">
-                  <img src= 'https://i.ibb.co/HH44fnX/streamline-icon-crafts-pottery-140x140-1.png'/>
+                  <img src= 'https://i.ibb.co/R6tQqBF/streamline-icon-color-painting-palette-140x140.png'/>
               </div>
 
               <div className="card-content">
@@ -107,7 +107,7 @@ function HomePage() {
 
           <div className="card baseBlock mb-4 border-0">
               <div className="card-image">
-                  <img src= 'https://i.ibb.co/W3nKbJ9/streamline-icon-color-brush-3-140x140.png'/>
+                  <img src= 'https://i.ibb.co/smgb44d/streamline-icon-color-brush-2-140x140.png'/>
               </div>
 
               <div className="card-content">
@@ -119,7 +119,7 @@ function HomePage() {
 
           <div className="card baseBlock mb-4 border-0">
               <div className="card-image">
-                  <img src= 'https://i.ibb.co/VxKTswx/streamline-icon-professions-man-artist-140x140.png'/>
+                  <img src= 'https://i.ibb.co/2ZSbrpG/streamline-icon-crafts-pottery-140x140.png'/>
               </div>
 
               <div className="card-content">

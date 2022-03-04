@@ -8,9 +8,9 @@ import {
   Input,
   IconButton,
 } from '@material-ui/core';
-import GoldBtn from "../components/buttons/GoldBtn";
+import GoldBtn from "./buttons/GoldBtn";
 import InfoIcon from "../assets/infoicon_brown.png";
-import TermsList from "../components/terms_lists/TermsList"
+import TermsList from "./terms_lists/TermsList"
 
 //--------------------------------------------------------------------------------------------
 
@@ -25,6 +25,7 @@ export const PageContainer = styled.div`
 
 //Template for 'Forms' like the Advanced Search Form
 export const FormDiv = styled.div`
+    width: 35%;
     left: 0;
     margin-left: 100px;
     margin-bottom:15px;
@@ -189,27 +190,25 @@ const AdvancedForm = () => {
         }
     
         return (
-            <div class="row align-items-center my5">
-                <div class="col-lg-5">
-                    <AdvancedSearchTitle>Advanced Search</AdvancedSearchTitle>
-            
-                    {/*Component that displays each 'Field Line' in the Advanced Search Form. E.g. Vase Number: Enter here (InfoIcon).*/}
-                    <FieldSearch name= 'ref'     value={state.ref}     onChange={handleChange}  placeholder= "Type Vase Reference No."  title= 'Vase Reference'     display='Reference Search Guide'/>
-                    <FieldSearch name= 'shape'   value={state.shape}   onChange={handleChange}  placeholder= "Enter Shape Name"         title= 'Shape'              display='Shape Terms'/>
-                    <FieldSearch name= 'fabric'  value={state.fabric}  onChange={handleChange}  placeholder= "Enter Fabric Name"        title= 'Fabric'             display='Fabric Terms'/>
-                    {/*<FieldSearch name= 'artist'  value={state.artist}  onChange={handleChange}  placeholder= "Enter Artist Name"        title= 'Artist' />*/}
-                    <FieldSearch name= 'subject' value={state.subject} onChange={handleChange}  placeholder= "Enter Vase Decription"    title= 'Subject'            display='Subject Search Guide'/>
-                    <FieldSearch name= 'pub'     value={state.pub}     onChange={handleChange}  placeholder= "Enter Publication Name"   title= 'Publication Name'   display='Publications'/>
-                    <FieldSearch name= 'col'     value={state.col}     onChange={handleChange}  placeholder= "Enter Collection Name"    title= 'Collection Name'    display='Collection Names'/>
-                    <FieldSearch name= 'prov'    value={state.prov}    onChange={handleChange}  placeholder= "Enter Provenance Name"    title= 'Provenance'         display='Provenance Names'/>
-            
-                    {/*Search Button UrlParam*/ }
-                    <br/><GoldBtn width='100%' name="Search" link={`${param}`}/>
-                </div>
-                <div class="col-lg-5">
-                    <TermsDictionary/>
-                </div>
-            </div>
+        <>
+        <FormDiv>
+            <AdvancedSearchTitle>Advanced Search</AdvancedSearchTitle>
+    
+            {/*Component that displays each 'Field Line' in the Advanced Search Form. E.g. Vase Number: Enter here (InfoIcon).*/}
+            <FieldSearch name= 'ref'     value={state.ref}     onChange={handleChange}  placeholder= "Type Vase Reference No."  title= 'Vase Reference'     display='Reference Search Guide'/>
+            <FieldSearch name= 'shape'   value={state.shape}   onChange={handleChange}  placeholder= "Enter Shape Name"         title= 'Shape'              display='Shape Terms'/>
+            <FieldSearch name= 'fabric'  value={state.fabric}  onChange={handleChange}  placeholder= "Enter Fabric Name"        title= 'Fabric'             display='Fabric Terms'/>
+            {/*<FieldSearch name= 'artist'  value={state.artist}  onChange={handleChange}  placeholder= "Enter Artist Name"        title= 'Artist' />*/}
+            <FieldSearch name= 'subject' value={state.subject} onChange={handleChange}  placeholder= "Enter Vase Decription"    title= 'Subject'            display='Subject Search Guide'/>
+            <FieldSearch name= 'pub'     value={state.pub}     onChange={handleChange}  placeholder= "Enter Publication Name"   title= 'Publication Name'   display='Publications'/>
+            <FieldSearch name= 'col'     value={state.col}     onChange={handleChange}  placeholder= "Enter Collection Name"    title= 'Collection Name'    display='Collection Names'/>
+            <FieldSearch name= 'prov'    value={state.prov}    onChange={handleChange}  placeholder= "Enter Provenance Name"    title= 'Provenance'         display='Provenance Names'/>
+    
+            {/*Search Button UrlParam*/ }
+            <br/><GoldBtn width='100%' name="Search" link={`${param}`}/>
+        </FormDiv>
+        <TermsDictionary/>
+        </>
         );
     }
 
@@ -222,9 +221,11 @@ const AdvancedForm = () => {
 //Render the Advanced Search Page.
 const AdvancedSearch =() => {
     return(
-      <div className="advanced-search">
+      <div>
         <SearchHeader/>
-        <AdvancedForm/> 
+          <PageContainer>
+            <AdvancedForm/>
+          </PageContainer>
       </div>
     ); 
 }

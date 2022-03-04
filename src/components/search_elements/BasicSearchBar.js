@@ -14,6 +14,7 @@ const useSearchStyles = makeStyles((theme) => ({
     borderRadius: '10px 10px 10px 10px',
     elevation: 0,
     alignItems: 'center',
+    color: '#fff',
     '& .MuiTextField-root': {
       display: 'flex',
       marginTop: '0px',
@@ -23,11 +24,18 @@ const useSearchStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       alignContent: 'center',
       borderRadius: '10px 0px 0px 10px',
-      backgroundColor: '#F6E7CB',   
+      backgroundColor: '#DAA844',   
       '&:hover': {
         backgroundColor: '#EBD3A5',
       },
-    }
+    },
+    '& .MuiSelect-root': {
+      color: '#fff',
+      fontFamily: 'Roboto',
+    },
+    "& .MuiSvgIcon-root": {
+      color: '#fff',
+    },
   },
   input: {
     marginLeft: theme.spacing(2),
@@ -76,7 +84,7 @@ const BasicSearchBar = () => {
     <Paper component="form" elevation={0} className={classes.root}>
 
         {/* Dropdown Fields*/}
-        <TextField id="outlined-select-field" select value={field} onChange={handleField} InputProps={{ disableUnderline: true }} >
+        <TextField className={classes.dropdown} id="outlined-select-field" select value={field} onChange={handleField} InputProps={{ disableUnderline: true }} >
           {fields.map((option) => (
             <MenuItem key={option.value} value={option.value}>
               {option.label}
