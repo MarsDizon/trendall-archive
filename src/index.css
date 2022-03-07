@@ -141,7 +141,7 @@ footer {
     object-fit: cover;
     object-position: center;
     margin-top: 15%;
-    filter: invert(13%) sepia(23%) saturate(537%) hue-rotate(346deg) brightness(94%) contrast(90%);
+    filter: invert(27%) sepia(21%) saturate(437%) hue-rotate(341deg) brightness(97%) contrast(95%);
 }
 
 .search-by-category .card-content {
@@ -185,6 +185,36 @@ footer {
 
 .contact {
   padding-top: 143px;
+}
+
+
+/* ----------- Advanced Search ----------- */
+
+.advanced-search {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.terms-dictionary {
+  background-color: white;
+  margin: 50px 15px 0px 100px;
+  height: 660px;
+  margin-bottom: 0px;
+  overflow-y: scroll;
+  padding: 45px;
+}
+
+.terms-dictionary::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+.terms-dictionary::-webkit-scrollbar-track {
+  background: #ffff;        /* color of the tracking area */
+}
+
+.terms-dictionary::-webkit-scrollbar-thumb {
+  background-color: #5F4F44;    /* color of the scroll thumb */
+  border-radius: 1px;
 }
 
 

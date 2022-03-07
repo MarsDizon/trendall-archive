@@ -64,7 +64,7 @@ function HomePage() {
       <div className='search-by-category'>
         {/*Display Search Results Title with number of vases found*/}
         <div style={{ display:'flex', fontFamily:"Roboto", fontSize:"22px", padding: '10px 0px 30px 0px'}}>
-          Search By Category [Unimplemented]
+          Search By Category (Proof of Concept)
         </div>
 
         {/*Vase Result Card*/}

@@ -11,7 +11,7 @@ const useSearchStyles = makeStyles((theme) => ({
     display: 'flex',
     width: '50%',
     height: 55,
-    borderRadius: '10px 10px 10px 10px',
+    borderRadius: '10px',
     elevation: 0,
     alignItems: 'center',
     color: '#fff',

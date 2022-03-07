@@ -14,60 +14,30 @@ import TermsList from "../components/terms_lists/TermsList"
 
 //--------------------------------------------------------------------------------------------
 
-//Div container that wraps everything in between header and footer
-export const PageContainer = styled.div`
-    width: auto;
-    height: 100%;
-    display: flex;
-    background-colour: #FCF7EE;
-    padding-top: 75px;
-`
-
-//Template for 'Forms' like the Advanced Search Form
-export const FormDiv = styled.div`
-    left: 0;
-    margin-left: 100px;
-    margin-bottom:15px;
-    padding: 45px;
-`
-
-const TermsDiv = styled(FormDiv)`
-    background-color: white;
-    margin-top: 50px;
-    height: 700px;
-    border-radius: 5px;
-    margin-bottom: 0px;
-    overflow: scroll;
-`
-
 const AdvancedSearchTitle = styled.div`
-    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 100;
-    color: #3F342C;
     margin-bottom: 15px;
 `
 
-const FieldTitle = styled(AdvancedSearchTitle)`
+const FieldTitle = styled.div`
     font-size: 16px;
     width: 40%;
-    margin-bottom: 0px;
 `
 
-const TermsTitle = styled(AdvancedSearchTitle)`
+const TermsTitle = styled.div`
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 0px;
 `
 
-const Terms = styled(FieldTitle)`
+const Terms = styled.div`
     font-size: 16px;
     margin-bottom: 10px;
     margin-top: 10px;
     width:100%;
 `
 
-const useSearchStyles = makeStyles((theme) => ({
+const useSearchStyles = makeStyles(() => ({
   root: {
     display: 'flex',
     width: '100%',
@@ -92,14 +62,11 @@ const AdvancedForm = () => {
 
     //Displays a list of searchable terms for each relevant field
     const TermsDictionary = () => {
-        const urlPath = window.location.href;
-        const pathname = urlPath.replace("https://trendall-archive.herokuapp.com/advanced-search/?", "");
-
         return (
-        <TermsDiv>
+        <div className='terms-dictionary'>
             <TermsTitle fontStyle="bold">{display}</TermsTitle>
             <Terms><TermsList name={term}/></Terms>
-        </TermsDiv>
+        </div>
         )
     }
 
@@ -189,10 +156,9 @@ const AdvancedForm = () => {
         }
     
         return (
-            <div class="row align-items-center my5">
-                <div class="col-lg-5">
+            <div class="row justify-content-center my5" style={{paddingTop: '80px'}}>
+                <div class="col-lg-5" style={{paddingTop: '50px'}}>
                     <AdvancedSearchTitle>Advanced Search</AdvancedSearchTitle>
-            
                     {/*Component that displays each 'Field Line' in the Advanced Search Form. E.g. Vase Number: Enter here (InfoIcon).*/}
                     <FieldSearch name= 'ref'     value={state.ref}     onChange={handleChange}  placeholder= "Type Vase Reference No."  title= 'Vase Reference'     display='Reference Search Guide'/>
                     <FieldSearch name= 'shape'   value={state.shape}   onChange={handleChange}  placeholder= "Enter Shape Name"         title= 'Shape'              display='Shape Terms'/>
