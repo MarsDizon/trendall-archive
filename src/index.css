@@ -205,15 +205,15 @@ footer {
 }
 
 .terms-dictionary::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px;              
 }
 
 .terms-dictionary::-webkit-scrollbar-track {
-  background: #ffff;        /* color of the tracking area */
+  background: #ffff;      
 }
 
 .terms-dictionary::-webkit-scrollbar-thumb {
-  background-color: #5F4F44;    /* color of the scroll thumb */
+  background-color: #5F4F44;    
   border-radius: 1px;
 }
 
